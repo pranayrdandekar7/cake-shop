@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cake-shop</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: antiquewhite;
+        }
+  .nav-bar
+  {
+    background-color: rgb(155, 70, 56);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap:wrap;
+  }
+ .cake-icon
+ {
+    height: 70px;
+   
+ }
+ .nav-brand-name{
+    
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+   
+   
+   
+ }
+ .nav-bar-menus{
+    background-color:white;
+    height: 50px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+    
+ }
+ .nav-bar-menus:hover{
+     background-color: black;
+     color: white;
+     box-shadow: 0px 0px 5px 2px white;
+     padding: 7px 25px;
+     transition: 0.5s;
+ }
+ .nav-container{
+    margin-left: 200px;
+    
+ }
+ .header-img{
+    height: 350px;
+    margin: 30px;
+ }
+ .header-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+ }
+ .header-title{
+    font-size: 50px;
+    color:rgb(155, 70, 56) ;
+ }
+ .header-desc{
+    font-size: 30px;
+    color:rgb(155, 70, 56) ;
+ }
+ .explore-btn{
+    background-color:rgb(155, 70, 56) ; 
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+ }
+  .explore-btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0 5px 5px black;
+
+ }
+ .our-feature-heading{
+   font-size: 50px;
+   color:rgb(155, 70, 56)  ;
+   text-align: center;
+   margin-top: 50px;
+ }
+ .feature-card{
+   width: 270px;
+   height: 150px;
+   cursor: pointer;
+   background-color: white;
+   border-radius: 10px;
+   box-shadow: 0 0 10px 10px gray;
+   padding: 10px;
+   margin: 10px;
+   position: relative;
+ }
+   .feature-card:hover{
+
+   width: 280px;
+   height: 160px; 
+   border-radius: 15px;
+   box-shadow: 0 0 10px 12px gray;
+   padding: 13px;
+    }
+ .feature-ico{
+   font-size: 50px;
+   position: absolute;
+   top: -30px;
+   right: 120px;
+   color:rgb(155, 70, 56) ;
+   
+ }
+ .feature-title{
+   text-align: center;
+   color:rgb(155, 70, 56)  ;
+ }
+ .feature-desc{
+   font-size: 16px;
+   text-align: center;
+   
+ }
+ .card-container{
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   margin-top: 50px;
+ }
+ .our-cake-heading{
+   color: brown;
+   font-size: 40px;
+   text-align: center;
+ }
+ .cake-card{
+   width: 250px;
+   height: 400px;
+   background-color: white;
+   border-radius: 25px;
+   margin: 20px 10px;
+   box-shadow: 0 0 10px 12px gray;
+   position: relative;
+ }
+ .cake-card:hover{
+   border-radius: 30px;
+   margin: 20px 8px;
+   box-shadow: 0 0 10px 12px gray;
+   padding: 10px;
+ }
+ 
+   
+ .cake-image{
+   width: 170px;
+   height: 170px;
+   display: block;
+   margin: 5px auto;
+   filter: drop-shadow( 0 0 10px  gray);
+ }
+ .cake-heading{
+   color: brown;
+   text-align: center;
+   font-size: 30px;
+ }
+ .cake-card-desc{
+   text-align:center;
+  
+ }
+ .cake-price-desc{
+   text-align: center;
+   position: absolute;
+   bottom: 15px;
+   left: 50px; 
+ }
+ .price{
+    color: red;
+    font-size: 30px; 
+    
+ }
+ .cake-order-btn{
+   width: 100px;
+   height:40px ;
+   background-color: brown;
+   border-radius: 30px;
+   display: block;
+   margin: 2px auto;
+   font-size: 15px;
+   font-weight: bold;
+   color: white;
+   position: absolute;
+   left: 70px;
+   bottom: -10px;
+   
+ }
+ .cake-order-btn:hover{
+   cursor: pointer;
+  padding: 10px;
+  width: 105px;
+   background-color: rgb(56, 3, 3);
+
+ }
+ .cake-card-container{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+ }
+ 
+        .footer{
+            background-color: black;
+            height: 300px;
+            box-shadow: 0 0 10 10 gray;
+            
+        
+        }
+
+        .footer-desc{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+           padding: 20px;
+
+        }
+
+        .cards{
+            height: 180px;
+            width: 110px;
+           color: white;
+            margin: 20px;
+            padding: 20px 20px;
+            text-align: center;
+        }
+
+        .card-1{
+            height: 180px;
+            width: 200px;
+           color:white;
+            margin: 20px;
+            padding: 20px 20px;
+            text-align: center;
+        }
+
+        .img{
+            height: 220px;
+            width: 280px;
+            margin: 20px;
+        }
+        .footer-icon{
+         font-size: 25px;
+         margin: 10px;
+        }
+ @media only screen and (max-width: 600px){
+    .nav-container{
+    margin-left:auto;
+    margin-right: auto;
+    
+ }
+ .nav-bar{
+    flex-direction: column;
+ }
+ .nav-bar-menus{
+    display: block;
+    margin: 10px;
+   width: 100px;
+   height: 20px;
+    text-align: center; 
+ }
+ .header-img{
+    height: 250px;
+ }
+ .header-title{
+    font-size: 30px;
+    
+ }
+ .header-desc{
+    font-size: 20px;
+ }
+ .explore-btn{
+    padding: 7px 15px;
+    font-size: 17px;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+ }
+ .our-feature-heading{
+   font-size: 35px;
+   margin-top: 30px;
+ }
+ .feature-card{
+   width: 200px;
+   height: 130px;
+   margin-bottom: 25px;
+ }
+ .feature-card:hover{
+
+width: 220px;
+height: 140px; 
+border-radius: 15px;
+box-shadow: 0 0 10px 12px gray;
+padding: 13px;
+ }
+.feature-ico{
+font-size: 30px;
+top: -30px;
+right: 90px;
+
+}
+.feature-title{
+   font-size: 20px;
+text-align: center;
+
+}
+  .our-cake-heading{
+   font-size: 30px;
+ }
+ .cake-card{
+   width: 200px;
+   height: 300px;
+   border-radius: 25px;
+   margin: 20px 10px;
+   box-shadow: 0 0 7px 10px gray;
+   
+ }
+ .cake-card:hover{
+   border-radius: 25px;
+   box-shadow: 0 0 10px 12px gray;
+   padding: 8px;
+ }
+ 
+ .cake-image{
+   width: 100px;
+   height: 100px;
+ }
+ .cake-heading{
+   font-size: 20px;
+ }
+ .cake-price-desc{
+   bottom: 8px;
+   left: 40px; 
+ }
+ .price{
+    font-size: 20px;  
+ }
+ .cake-order-btn{
+   width: 90px;
+   height:30px ;
+   font-size: 12px;
+   font-weight: bold;
+   color: white;
+   left: 60px;
+   bottom: -10px;
+   
+ }
+ .cake-order-btn:hover{
+  padding:5px;
+  width: 100px;
+
+ }
+ 
+}
+ @media only screen and (min-width : 601px) and (max-width : 800px ) {
+    .nav-container{
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 10px;
+ }
+ .header-img{
+    height: 300px;
+ }
+ .header-title{
+    font-size: 35px;
+    
+ }
+}
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="nav-brand">
+     <img src="cake-icon.png" class="cake-icon"/>
+     <span class="nav-brand-name">Pranay's cake studio</span>
+    </div>
+    <div class="nav-container">
+     <span class="nav-bar-menus">Home</span>
+     <span class="nav-bar-menus">About</span>
+     <span class="nav-bar-menus">Services</span>
+     <span class="nav-bar-menus">Contact</span>
+     <span class="nav-bar-menus">Category</span>
+    </div>
+    </div>
+
+<div class="header-container">
+    <div>
+<img src="./img/cake-shop-header-img.png" class="header-img">
+
+    </div>
+    <div>
+    <h1 class="header-title">We baked yours derams....</h1>
+    <p class="header-desc">Order your favourite cake now ! 🎂</p>
+    <button class="explore-btn">Explore More cakes 👉</button>
+
+    </div>
+</div>
+<div>
+ <h1 class="our-feature-heading">Why choose us ?</h1>
+ <div class="card-container">
+ <div class="feature-card">
+   <i class="fa-solid fa-fire-burner fa-bounce feature-ico" ></i>
+   <h1 class="feature-title"><u>Freshly Baked Cakes</u></h1>
+   <p class="feature-desc">Our cakes are freshly baked and delivered to you within 4 hours of baking.</p>
+ </div>
+ <div class="feature-card">
+   <i class="fa-solid fa-box-open fa-bounce feature-ico"></i>
+   <h1 class="feature-title"><u>Free Home Delivery </u></h1>
+   <p class="feature-desc">We provide free delivery of cakes within 10 km of our shop .</p>
+ </div>
+ <div class="feature-card">
+   <i class="fa-solid fa-egg fa-bounce feature-ico"></i>
+   <h1 class="feature-title"><u>Egg-less  Cakes</u></h1>
+   <p class="feature-desc">WE also provide eggless cakes for our vegetarian customers.</p>
+ </div>
+ <div class="feature-card">
+   <i class="fa-solid fa-kitchen-set fa-bounce feature-ico"></i>
+   <h1 class="feature-title"><u>Unique designs</u></h1>
+   <p class="feature-desc">We provide unique design for your cakes.You can also customize your cakes.</p>
+ </div>
+ </div>
+</div>
+<h1 class="our-cake-heading"><u>Our Cakes  </u><i class="fa-solid fa-arrow-down fa-flip"></i></h1>
+<div class="cake-card-container">
+<div class="cake-card">
+   <img src="./img/red-velvet-cake.png" class="cake-image"/>
+   <h1 class="cake-heading">Red-Velvet Cake</h1>
+   <p class="cake-card-desc">Red velvet cake is traditionally a red, crimson, or scarlet-colored layer cake, layered with ermine icing.</p>
+    <h3 class="cake-price-desc">only at ₹ <del class="price">1200</del> 850</h3>
+   <button class="cake-order-btn">Order-Now</button>
+</div>
+<div class="cake-card">
+   <img src="./img/strawberry-cake.png" class="cake-image"/>
+   <h1 class="cake-heading">Strawberry Cake</h1>
+   <p class="cake-card-desc">Strawberry cake with chocolate was flavourous and worth a palate!.</p>
+    <h3 class="cake-price-desc">only at ₹ <del class="price">1200</del> 850</h3>
+   <button class="cake-order-btn">Order-Now</button>
+</div>
+<div class="cake-card">
+   <img src="./img/bluebery-cake.png" class="cake-image"/>
+   <h1 class="cake-heading">Blueberry Cake</h1>
+   <p class="cake-card-desc">A blueberry is a small but mighty burst of sweetness.</p>
+    <h3 class="cake-price-desc">only at ₹ <del class="price">1200</del> 850</h3>
+   <button class="cake-order-btn">Order-Now</button>
+</div>
+<div class="cake-card">
+   <img src="./img/chocklate-venila-cake.png" class="cake-image"/>
+   <h1 class="cake-heading">Chocolate-Venila Cake</h1>
+   <p class="cake-card-desc">These cakes are soft, buttery, fluffy, moist, and filled with rich chocolate and vanilla flavor.</p>
+    <h3 class="cake-price-desc">only at ₹ <del class="price">1200</del> 850</h3>
+   <button class="cake-order-btn">Order-Now</button>
+</div>
+<div class="cake-card">
+   <img src="./img/white-forest-cake.png" class="cake-image"/>
+   <h1 class="cake-heading">White-Forest Cake</h1>
+   <p class="cake-card-desc">White forest cake is a riff on the classic European layer cake.</p>
+    <h3 class="cake-price-desc">only at ₹ <del class="price">1200</del> 850</h3>
+   <button class="cake-order-btn">Order-Now</button>
+</div>
+<div class="cake-card">
+   <img src="./img/eggless-blackforest-cake.png" class="cake-image"/>
+   <h1 class="cake-heading">Eggless-Blackforest Cake</h1>
+   <p class="cake-card-desc">Eggless Black Forest Cake is not only delicious, it is also made a little healthier by using whole wheat flour.</p>
+    <h3 class="cake-price-desc">only at ₹ <del class="price">1200</del> 850</h3>
+   <button class="cake-order-btn">Order-Now</button>
+</div>
+<div class="cake-card">
+   <img src="./img/german-chocolate-cake.png" class="cake-image"/>
+   <h1 class="cake-heading">German-Chocolate Cake</h1>
+   <p class="cake-card-desc">German's chocolate cake is a layered chocolate cake filled and topped with a coconut-pecan frosting.</p>
+    <h3 class="cake-price-desc">only at ₹ <del class="price">1200</del> 850</h3>
+   <button class="cake-order-btn">Order-Now</button>
+</div>
+<div class="cake-card">
+   <img src="./img/Engagement-cake.png" class="cake-image"/>
+   <h1 class="cake-heading">Engagement Cake</h1>
+   <p class="cake-card-desc">A party without cake is just a meeting.The beauty of an engagement cake lies in its beautiful sayings, wordings.</p>
+    <h3 class="cake-price-desc">only at ₹ <del class="price">1200</del> 850</h3>
+   <button class="cake-order-btn">Order-Now</button>
+</div>
+<div class="cake-card">
+   <img src="./img/baby-shower-cakes.png" class="cake-image"/>
+   <h1 class="cake-heading">Baby Shower Cake</h1>
+   <p class="cake-card-desc">Since pregnancy is such a beautiful journey, the celebration of baby shower occasion must be special.</p>
+    <h3 class="cake-price-desc">only at ₹ <del class="price">1200</del> 850</h3>
+   <button class="cake-order-btn">Order-Now</button>
+</div>
+<div class="cake-card">
+   <img src="./img/dark-chocklate-cake.png" class="cake-image"/>
+   <h1 class="cake-heading">Dark Chocolate Cake</h1>
+   <p class="cake-card-desc"> Dark Chocolate cake is a cake flavored with melted chocolate, cocoa powder, or both.</p>
+    <h3 class="cake-price-desc">only at ₹ <del class="price">1200</del> 850</h3>
+   <button class="cake-order-btn">Order-Now</button>
+</div>
+</div>
+
+<script src="https://kit.fontawesome.com/4e3c8e1530.js" crossorigin="anonymous"></script>
+<br>
+<br>
+<div class="footer">
+    <div class="footer-desc">
+        <div class="footer-img">
+            <img src="./img/cake-shop-header-img2.png" class="img"/>
+        </div>
+
+        <div class="cards">
+            <p><b><u>Quick Links</u></b></p>
+            <p>Home</p>
+            <p>Search</p>
+            <p>Contact</p>
+            <p>About</p>
+        </div>
+
+        <div class="cards">
+            <p><b><u>Usefull Links</u></b></p>
+            <p>Privacy Policy</p>
+            <p>Terms And conditions</p>
+            <p>Desclimer</p>
+            <p>Support</p>
+            <h3>FAQ</h3>
+        </div>
+
+        <div class="card-1">
+            <p><b><u>CONTACT</u></b></p>
+            <p>123, sarafa road PSK 3, </p>
+            <p>Chimur , Chandrapur , India</p>
+            <i class="fa-sharp fa-regular fa-envelope fa-fade footer-icon" style="color: #e41111;"></i>
+            <i class="fa-brands fa-facebook fa-fade footer-icon"></i>
+            <i class="fa-brands fa-square-twitter fa-fade footer-icon"></i>
+            <i class="fa-brands fa-google fa-fade footer-icon"></i>
+            
+
+            
+        </div>
+
+</body>
+</html>
+</body>
+</html> 
