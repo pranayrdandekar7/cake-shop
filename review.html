@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Review Page</title>
+
+          <style>
+             body{
+            margin: 0;
+            padding: 0;
+            background-color:antiquewhite;
+        }
+  .nav-bar
+  {
+    background-color: rgb(155, 70, 56);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap:wrap;
+  }
+ .cake-icon
+ {
+    height: 40px;
+   
+ }
+ .nav-brand-name{
+    
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+   
+   
+   
+ }
+ .nav-bar-menus{
+    background-color:white;
+    height: 50px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+    
+ }
+ .nav-bar-menus:hover{
+     background-color: black;
+     color: white;
+     box-shadow: 0px 0px 5px 2px white;
+     padding: 7px 25px;
+     transition: 0.5s;
+ }
+ .nav-container{
+    margin-left: 200px;
+    
+ }
+.heading-box{ margin-top: -25px;
+    background-color:#ffe6cc;
+}
+.review-container{ padding: 0px 100px 100px 100px;
+    background-color: #ffe6cc;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    margin-top: -40px;
+}
+.headline{ 
+    color: rgb(155, 70, 56);
+    padding-top: 50px;
+    font-size: 38px;
+   background-color:#ffe6cc;
+    text-align: center;
+}
+.headline-description{
+     font-family:cursive;
+    font-size: 25px;
+    text-align: center;
+    background-color: #ffe6cc;
+    padding-bottom: 30px;
+}
+.review-cart{ 
+    position: relative;
+     border-radius: 20px;
+    height: 250px;
+    width: 400px;
+    background-color:#fff;
+    border-radius: 15px;
+    margin: 50px 40px 0px 0px;
+    filter: drop-shadow( 0 0 10px  gray);
+    padding: 10px;
+
+}
+.review-cart:hover{
+    cursor: pointer;
+     background-color:rgb(155, 70, 56);
+    height: 260px;
+    width: 410px;
+    color: #fff;
+}
+
+.image-cart{
+    display: flex;
+}
+.review-image{
+    border: 2px solid black;
+     border-radius: 50px;
+    height:80px;
+    width:90px;
+    margin: 10px 0px 0px 10px;
+    filter: drop-shadow( 0 0 10px  gray);
+}
+.seen-at{   font-family: 'Rubik', sans-serif;
+    left: 130px;
+    top: 50px;
+    position: absolute;
+}
+.seen-at:hover{
+    color: #FFF;
+}
+.share-png{ padding: 10px;
+    height: 28px;
+    right: 10px;
+    position:absolute;
+    cursor: pointer;
+}
+.share-png:hover{ padding: 10px;
+    height: 32px;
+    margin-left: 105px;
+        
+}
+.like-png{
+    position:absolute;
+    height: 28px;
+    bottom: 10px;
+    cursor: pointer;
+
+}
+.like-png:hover{ border: 2px solid black;
+    height: 30px;
+}
+.viver-name{ 
+    font-family: 'PT Serif', serif;
+     margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.viver-name:hover{
+    color: #fff;
+}
+.rating{
+    margin-left: 10px;
+
+}
+.review-description{ 
+    text-align: center;
+    
+}
+.review-description:hover{
+    color: yellow;
+}
+
+.footer{
+            background-color: black;
+            height: 300px;
+            box-shadow: 0 0 10 10 gray;
+            
+        
+        }
+
+        .footer-desc{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+           padding: 20px;
+
+        }
+
+        .cards{
+            height: 180px;
+            width: 110px;
+           color: white;
+            margin: 20px;
+            padding: 20px 20px;
+            text-align: center;
+        }
+
+        .card-1{
+            height: 180px;
+            width: 200px;
+           color:white;
+            margin: 20px;
+            padding: 20px 20px;
+            text-align: center;
+        }
+
+        .img{
+            height: 220px;
+            width: 280px;
+            margin: 20px;
+        }
+        .footer-icon{
+         font-size: 25px;
+         margin: 10px;
+        }
+
+          </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="nav-brand">
+     <img src="cake-icon.png" class="cake-icon"/>
+     <span class="nav-brand-name">Pranay's cake studio</span>
+    </div>
+    <div class="nav-container">
+     <span class="nav-bar-menus">Home</span>
+     <span class="nav-bar-menus">About</span>
+     <span class="nav-bar-menus">Services</span>
+     <span class="nav-bar-menus">Contact</span>
+     <span class="nav-bar-menus">Category</span>
+    </div>
+    </div>
+     
+    
+
+    <div class="heading-box">
+    <h1 class="headline">Our Customer Review's</h1>
+    <h3 class="headline-description">What our customer says about our service</h3>
+    </div>
+        <div class="review-container">
+
+            <div class="review-cart">
+                <div class="image-cart">
+                <img class="review-image" src="./img/roshani ruyarkar.jpeg">
+                <h2 class="viver-name">Roshani Ruyarkar</h2>
+                <p class="seen-at"> 20 October 2021</p>
+
+                </div>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+            <p class="review-description">This is the best Shop for cakes😊</p>
+            
+
+            </div>
+
+        
+    <div class=" review-cart">
+        <div class="image-cart">
+            <img class="review-image" src="./img/chaitali dahikar.jpeg">
+            <h2 class="viver-name"> Chaitali Dahikar</h2>
+            <p class="seen-at">10 August 2022</p>
+            
+            </div>
+            <p class="rating">⭐⭐⭐⭐</p>
+        <p class="review-description">very delious cakes you provided...and services also very good.</p>
+            
+    </div>
+
+    <div class=" review-cart">
+        <div class="image-cart">
+            <img class="review-image" src="./img/shreyash lonkar.jpeg">
+            <h2 class="viver-name">Shreyash Lonkar</h2>
+            <p class="seen-at">12 December 2021<p>
+            
+            </div>
+            <p class="rating">⭐⭐⭐⭐</p>
+        <p class="review-description">The cake was very delicious ..I would like to prefer everybody to Buy from them</p>
+        
+
+    </div>
+    <div class=" review-cart">
+        <div class="image-cart">
+            <img class="review-image" src="./img/suraj shende.jpeg">
+            <h2 class="viver-name">Suraj Shende</h2>
+            <p class="seen-at"> 25 February 2023</p>
+           
+            </div>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+        <p class="review-description">Thank you so much For the delicious cakes.you made our little daughter happy on her birthday.</p>
+        
+    </div>
+    <div class=" review-cart">
+        <div class="image-cart">
+            <img class="review-image" src="./img/mrunali wanaskar.jpeg">
+            <h2 class="viver-name">Mrunali Wanaskar</h2>
+            <p class="seen-at">10 June 2023</p>
+           
+            </div>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+        <p class="review-description">The Very Uniq cake designs and very delicious cakes provided by Them.Thank You. </p>
+        
+
+    </div>
+    <div class=" review-cart">
+        <div class="image-cart">
+            <img class="review-image" src="./img/pratham lambe.jpeg">
+            <h2 class="viver-name">Pratham Lambe</h2>
+            <p class="seen-at">27 April 2023</p>
+            
+            </div>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+        <p class="review-description">Good Taste...heighly Recommended to all Good Testers.</p>
+       
+    </div>
+    <div class=" review-cart">
+        <div class="image-cart">
+            <img class="review-image" src="./img/vaibhavi.jpeg">
+            <h2 class="viver-name">Vaibhavi Hole</h2>
+            <p class="seen-at">15 March 2019</p>
+            
+            </div>
+            <p class="rating">⭐⭐⭐⭐</p>
+        <p class="review-description">Thank You for the Delicious cake u made for us..this is very good cake shop.</p>
+        
+    </div>
+    <div class=" review-cart">
+        <div class="image-cart">
+            <img class="review-image" src="./img/ganpati.jpeg">
+            <h2 class="viver-name">Salman Khan</h2>
+            <p class="seen-at">29 February 2020</p>
+           
+            </div>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+        <p class="review-description">Very good Experience ..Thank You For Delicious cake</p>
+       
+
+    
+    </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-desc">
+            <div class="footer-img">
+                <img src="./img/cake-shop-header-img2.png" class="img"/>
+            </div>
+    
+            <div class="cards">
+                <p><b><u>Quick Links</u></b></p>
+                <p>Home</p>
+                <p>Search</p>
+                <p>Contact</p>
+                <p>About</p>
+            </div>
+    
+            <div class="cards">
+                <p><b><u>Usefull Links</u></b></p>
+                <p>Privacy Policy</p>
+                <p>Terms And conditions</p>
+                <p>Desclimer</p>
+                <p>Support</p>
+                <h3>FAQ</h3>
+            </div>
+    
+            <div class="card-1">
+                <p><b><u>CONTACT</u></b></p>
+                <p>123, sarafa road PSK 3, </p>
+                <p>Chimur , Chandrapur , India</p>
+                <i class="fa-sharp fa-regular fa-envelope fa-fade footer-icon" style="color: #e41111;"></i>
+                <i class="fa-brands fa-facebook fa-fade footer-icon"></i>
+                <i class="fa-brands fa-square-twitter fa-fade footer-icon"></i>
+                <i class="fa-brands fa-google fa-fade footer-icon"></i>
+                
+    
+                
+        </div>
+        <script src="https://kit.fontawesome.com/4e3c8e1530.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
+</body>
+</html>
